@@ -84,10 +84,10 @@ if [ -e $PREFIX/share/figlet/Remo773.flf ]; then
 else
 wget https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
 sleep 3
-cp Remo773.flf $PREFIX/share/figlet/Remo773.flf;
+cp Jangid-Shyam.flf $PREFIX/share/figlet/Remo773.flf;
 cp ASCII-Shadow.flf $PREFIX/share/figlet/ASCII-Shadow.flf;
 sleep 3
-rm Remo773.flf
+rm Jangid-Shyam.flf
 fi
 THEADER () 
 {
@@ -137,7 +137,7 @@ TNAME="$PROC";
 col=$(tput cols)
 echo ;
 #figlet -f ASCII-Shadow "$PROC" | lolcat;
-bash ~/T-Header/.banner.sh ${col} ${TNAME}
+bash ~/termux banner/.banner.sh ${col} ${TNAME}
 echo "";
 #echo -e '\e[0;35m+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\e[00m';
 #echo -e '\033[1;43;30m### SUBSCRIBE MY YOUTUBE CHANNEL ### \033[0m';
